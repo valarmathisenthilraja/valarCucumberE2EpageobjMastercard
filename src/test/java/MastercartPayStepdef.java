@@ -15,9 +15,9 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.concurrent.TimeUnit;
 
-public class MastercartPayStepdef
+public class MastercartPayStepdef extends TestRunni
 {
-    WebDriver driver;
+    //WebDriver driver;
     Loginpage loginpage;
     Productpage productpage;
     Cartpage cartpage;
@@ -29,6 +29,7 @@ public class MastercartPayStepdef
     {
        // WebDriverManager.chromedriver().setup();
         //driver=new ChromeDriver();
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         loginpage = new Loginpage(driver);
         productpage =new Productpage(driver);
