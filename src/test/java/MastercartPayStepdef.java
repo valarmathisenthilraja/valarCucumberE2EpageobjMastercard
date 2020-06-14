@@ -27,8 +27,8 @@ public class MastercartPayStepdef
     @Before
     public void begin()
     {
-        WebDriverManager.chromedriver().setup();
-        driver=new ChromeDriver();
+       // WebDriverManager.chromedriver().setup();
+        //driver=new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         loginpage = new Loginpage(driver);
         productpage =new Productpage(driver);

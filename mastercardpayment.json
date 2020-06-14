@@ -3,12 +3,12 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-13T19:34:53.226Z",
+        "start_timestamp": "2020-06-14T15:42:44.831Z",
         "before": [
           {
             "result": {
-              "duration": 4998000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\r\n\tat MastercartPayStepdef.begin(MastercartPayStepdef.java:32)\r\n",
+              "status": "failed"
             },
             "match": {
               "location": "MastercartPayStepdef.begin()"
@@ -34,8 +34,8 @@
         "steps": [
           {
             "result": {
-              "duration": 2494000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 3,
             "name": "I navigate into url \"http://twentyconsulting-001-site1.dtempurl.com/\"",
@@ -52,8 +52,7 @@
           },
           {
             "result": {
-              "duration": 548000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 4,
             "name": "click on login link",
@@ -64,8 +63,7 @@
           },
           {
             "result": {
-              "duration": 15000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "i should see homepage",
@@ -76,8 +74,7 @@
           },
           {
             "result": {
-              "duration": 171000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "enter username \"abc@tester.com\"",
@@ -94,8 +91,7 @@
           },
           {
             "result": {
-              "duration": 133000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "enter password \"abc123\"",
@@ -112,8 +108,7 @@
           },
           {
             "result": {
-              "duration": 860000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "see login page",
@@ -124,8 +119,7 @@
           },
           {
             "result": {
-              "duration": 1055000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "click on mobile link",
@@ -136,8 +130,7 @@
           },
           {
             "result": {
-              "duration": 2850000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "add item1 into cart",
@@ -148,8 +141,8 @@
           },
           {
             "result": {
-              "duration": 2121000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 11,
             "name": "add item2 into cart",
@@ -160,7 +153,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 12,
             "name": "see the products",
@@ -171,8 +164,8 @@
           },
           {
             "result": {
-              "duration": 9006000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 13,
             "name": "go to cart page",
@@ -183,8 +176,7 @@
           },
           {
             "result": {
-              "duration": 14779000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "go to checkout page",
@@ -195,8 +187,7 @@
           },
           {
             "result": {
-              "duration": 2083000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "order success page msg \"Your order has been successfully processed!\"",
