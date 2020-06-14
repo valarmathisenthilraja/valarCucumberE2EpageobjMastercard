@@ -12,7 +12,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-@CucumberOptions(features = {"src\\test\\resources\\MastercardPay.feature"},
+@CucumberOptions(features = {"src/test/resources/MastercardPay.feature"},
         plugin = {"pretty","json:mastercardpayment.json"})
 @RunWith(Cucumber.class)
 public class TestRunni
