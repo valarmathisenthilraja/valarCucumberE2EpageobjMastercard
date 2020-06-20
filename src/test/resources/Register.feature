@@ -47,8 +47,8 @@ Feature: Registration
     And i see this message "Your registration completed"
     Examples:
     |gender|firstname|lastname|day|month|year|email|password|confirmpwd|
-    |f|H         |h    |8  |8    |2017|h32@test.com|htest88|htest88   |
-    |m|I         |i    |9  |9    |2018|i91@test.com |itest99|itest99   |
+    |f|H         |h    |8  |8    |2017|h25@test.com|htest88|htest88   |
+    |m|I         |i    |9  |9    |2018|i23@test.com |itest99|itest99   |
 
 
 
