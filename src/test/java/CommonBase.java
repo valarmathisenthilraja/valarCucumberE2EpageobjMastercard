@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonBase extends TestRunni
 {
-   // public static WebDriver driver;
+  // public static WebDriver driver;
     public  static Loginpage loginpage;
     public static Productpage productpage;
     public static Cartpage cartpage;
@@ -26,7 +26,7 @@ public class CommonBase extends TestRunni
     public void begin()
     {
         System.out.println("In MastercartPayStepdef");
-       // WebDriverManager.chromedriver().setup();
+       //WebDriverManager.chromedriver().setup();
        //driver=new ChromeDriver();
        // WebDriverManager.firefoxdriver().setup();
        // driver=new FirefoxDriver();
@@ -37,8 +37,8 @@ public class CommonBase extends TestRunni
         //driver=new EdgeDriver();
        // WebDriverManager.operadriver().setup();working fine
         //driver=new OperaDriver();
-      // driver.manage().window().maximize();
-       // driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+     // driver.manage().window().maximize();
+     // driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         loginpage = new Loginpage(driver);
         productpage =new Productpage(driver);
         cartpage=new Cartpage(driver);
@@ -49,10 +49,10 @@ public class CommonBase extends TestRunni
 
     }
     @After
-    public void end()
+    public void end()throws InterruptedException
     {
     //    driver.quit();
-
+        Thread.sleep(5000);
         ordersuccesspage.clicklogoutLink();
     }
 

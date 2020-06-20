@@ -6,6 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -105,10 +106,15 @@ public class RegisterpageStepdef
         CommonBase.registerpage.registerbtn();
     }
 
-    @When("i see this message Your registration completed")
-    public void i_see_this_message_Your_registration_completed()
+    @When("i see this message {string}")
+    public void i_see_this_message_Your_registration_completed(String expmsg)throws InterruptedException
     {
-        CommonBase.driver.getTitle();
+        Thread.sleep(2000);
+        //String exreg="Your registration completed";
+        //String acreg="Your registration completed";
+        CommonBase.registerpage.regactual(expmsg);
+
+        //CommonBase.driver.getTitle();
     }
 
 
@@ -138,6 +144,12 @@ CommonBase.registerpage.clickmyaccount();
         Thread.sleep(2000);
         CommonBase.registerpage.clicksavebtn();
     }
+
+
+
+
+
+
 
 
 }

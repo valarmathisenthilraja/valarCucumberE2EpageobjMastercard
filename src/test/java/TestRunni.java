@@ -14,15 +14,20 @@ import java.net.URL;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = {"src//test//resources"},
-        plugin = {"pretty","json:mastercardpayment.json"}
+        plugin = {"pretty","json:mastercardpayment.json"},
        // tags={"@reg"}
    //tags = {"@update"}
+        tags={"@bulkreg"}
         )
 
 public class TestRunni
 {
- public static final String USERNAME = "valarmathi7";
+ /*public static final String USERNAME = "valarmathi7";
     public static final String AUTOMATE_KEY = "5fJP7A7kscdpsQvqxVbp";
+    public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";*/
+
+    public static final String USERNAME = "valarmathisenthi1";
+    public static final String AUTOMATE_KEY = "EWKjaXzsuzp4i3VZS5gU";
     public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
     static WebDriver driver;
 

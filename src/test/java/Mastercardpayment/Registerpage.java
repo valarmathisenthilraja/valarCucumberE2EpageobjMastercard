@@ -1,4 +1,5 @@
 package Mastercardpayment;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -134,6 +135,16 @@ public class Registerpage
     public void clicksavebtn()
     {
         savebtn.click();
+    }
+
+    @FindBy(xpath = "(//div[text()='Your registration completed'])")
+    public WebElement actmsg;
+
+    public void regactual(String expmsg)
+    {
+
+        Assertions.assertEquals(actmsg.getText(),expmsg);
+
     }
 
 

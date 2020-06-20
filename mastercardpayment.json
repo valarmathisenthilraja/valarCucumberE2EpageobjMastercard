@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-20T10:24:21.679Z",
+        "start_timestamp": "2020-06-20T21:03:21.741Z",
         "before": [
           {
             "result": {
-              "duration": 21000000,
+              "duration": 33000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 21,
-        "name": "Update myaccount details",
+        "line": 50,
+        "name": "Bulk Registeration in Nopcommerce website",
         "description": "",
-        "id": "registration;update-myaccount-details",
+        "id": "registration;bulk-registeration-in-nopcommerce-website;;2",
         "after": [
           {
             "result": {
-              "duration": 875000000,
+              "duration": 5957000000,
               "status": "passed"
             },
             "match": {
@@ -31,14 +31,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2679000000,
+              "duration": 2535000000,
               "status": "passed"
             },
-            "line": 22,
+            "line": 34,
             "name": "I navigate into url \"http://twentyconsulting-001-site1.dtempurl.com/\"",
             "match": {
               "arguments": [
@@ -53,122 +53,496 @@
           },
           {
             "result": {
-              "duration": 698000000,
+              "duration": 3696000000,
               "status": "passed"
             },
-            "line": 23,
-            "name": "click on login link",
+            "line": 35,
+            "name": "i click register link",
             "match": {
-              "location": "MastercartPayStepdef.click_on_login_link()"
+              "location": "RegisterpageStepdef.i_click_register_link()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 326000000,
+              "duration": 3090000000,
               "status": "passed"
             },
-            "line": 24,
-            "name": "enter username \"moon@tester.com\"",
+            "line": 36,
+            "name": "i should register page",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"moon@tester.com\"",
-                  "offset": 15
-                }
-              ],
-              "location": "MastercartPayStepdef.enter_username(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 303000000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "enter password \"moon123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"moon123\"",
-                  "offset": 15
-                }
-              ],
-              "location": "MastercartPayStepdef.enter_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1460000000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "see login page",
-            "match": {
-              "location": "MastercartPayStepdef.see_login_page()"
+              "location": "RegisterpageStepdef.i_should_register_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2704000000,
+              "duration": 205000000,
               "status": "passed"
             },
-            "line": 27,
-            "name": "i click my account link",
-            "match": {
-              "location": "RegisterpageStepdef.iClickMyAccountLink()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 58000000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "see my account page",
-            "match": {
-              "location": "RegisterpageStepdef.seeMyAccountPage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4387000000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "change lastname \"senthilraja\"",
+            "line": 37,
+            "name": "i click radiobtn \"f\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"senthilraja\"",
-                  "offset": 16
+                  "val": "\"f\"",
+                  "offset": 17
                 }
               ],
-              "location": "RegisterpageStepdef.changeLastname(java.lang.String)"
+              "location": "RegisterpageStepdef.i_click_radiobtn(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2988000000,
+              "duration": 2211000000,
               "status": "passed"
             },
-            "line": 30,
-            "name": "click save button",
+            "line": 38,
+            "name": "i enter firstname \"H\"",
             "match": {
-              "location": "RegisterpageStepdef.clickSaveButton()"
+              "arguments": [
+                {
+                  "val": "\"H\"",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterpageStepdef.i_enter_firstname(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2396000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "i enter lastname \"h\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"h\"",
+                  "offset": 17
+                }
+              ],
+              "location": "RegisterpageStepdef.i_enter_lastname(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2482000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "i should select day \"8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"8\"",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterpageStepdef.i_should_select_day(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2352000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "i should select month \"8\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"8\"",
+                  "offset": 22
+                }
+              ],
+              "location": "RegisterpageStepdef.i_should_select_month(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2404000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "i should select year \"2017\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2017\"",
+                  "offset": 21
+                }
+              ],
+              "location": "RegisterpageStepdef.i_should_select_year(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2256000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "i should enter email \"h34@test.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"h34@test.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "RegisterpageStepdef.i_should_enter_email(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 215000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "i enter password \"htest88\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"htest88\"",
+                  "offset": 17
+                }
+              ],
+              "location": "RegisterpageStepdef.i_enter_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 196000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "i enter confirmpwd \"htest88\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"htest88\"",
+                  "offset": 19
+                }
+              ],
+              "location": "RegisterpageStepdef.i_enter_confirmpwd(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3144000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "i clik reister button",
+            "match": {
+              "location": "RegisterpageStepdef.i_clik_reister_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2199000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "i see this message \"Your registration completed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your registration completed\"",
+                  "offset": 19
+                }
+              ],
+              "location": "RegisterpageStepdef.i_see_this_message_Your_registration_completed(java.lang.String)"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@update"
+            "name": "@bulkreg"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-20T21:03:57.200Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonBase.begin()"
+            }
+          }
+        ],
+        "line": 51,
+        "name": "Bulk Registeration in Nopcommerce website",
+        "description": "",
+        "id": "registration;bulk-registeration-in-nopcommerce-website;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 5960000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonBase.end()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 470000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I navigate into url \"http://twentyconsulting-001-site1.dtempurl.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://twentyconsulting-001-site1.dtempurl.com/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "MastercartPayStepdef.i_navigate_into_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3675000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "i click register link",
+            "match": {
+              "location": "RegisterpageStepdef.i_click_register_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3073000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "i should register page",
+            "match": {
+              "location": "RegisterpageStepdef.i_should_register_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 163000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "i click radiobtn \"m\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"m\"",
+                  "offset": 17
+                }
+              ],
+              "location": "RegisterpageStepdef.i_click_radiobtn(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2187000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "i enter firstname \"I\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"I\"",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterpageStepdef.i_enter_firstname(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2369000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "i enter lastname \"i\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"i\"",
+                  "offset": 17
+                }
+              ],
+              "location": "RegisterpageStepdef.i_enter_lastname(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2363000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "i should select day \"9\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"9\"",
+                  "offset": 20
+                }
+              ],
+              "location": "RegisterpageStepdef.i_should_select_day(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2362000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "i should select month \"9\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"9\"",
+                  "offset": 22
+                }
+              ],
+              "location": "RegisterpageStepdef.i_should_select_month(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2365000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "i should select year \"2018\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2018\"",
+                  "offset": 21
+                }
+              ],
+              "location": "RegisterpageStepdef.i_should_select_year(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2267000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "i should enter email \"i94@test.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"i94@test.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "RegisterpageStepdef.i_should_enter_email(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 393000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "i enter password \"itest99\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"itest99\"",
+                  "offset": 17
+                }
+              ],
+              "location": "RegisterpageStepdef.i_enter_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 228000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "i enter confirmpwd \"itest99\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"itest99\"",
+                  "offset": 19
+                }
+              ],
+              "location": "RegisterpageStepdef.i_enter_confirmpwd(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2899000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "i clik reister button",
+            "match": {
+              "location": "RegisterpageStepdef.i_clik_reister_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2200000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "i see this message \"Your registration completed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your registration completed\"",
+                  "offset": 19
+                }
+              ],
+              "location": "RegisterpageStepdef.i_see_this_message_Your_registration_completed(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@bulkreg"
           }
         ]
       }
