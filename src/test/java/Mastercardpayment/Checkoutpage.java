@@ -62,8 +62,9 @@ public WebElement cardholderName;
     @FindBy(id="CardCode")
     public WebElement cardCode;
 
-   public void cardType()
+   public void cardType()throws InterruptedException
    {
+       Thread.sleep(2000);
        Select cartType = new Select(driver.findElement(By.id("CreditCardType")));
        cartType.selectByValue("MasterCard");
        cardholderName.sendKeys("test");
@@ -84,7 +85,7 @@ public WebElement cardholderName;
         paymentinfocontinuebtn.click();
     }
 
-@FindBy(xpath = "//input[@value='Confirm']")
+    @FindBy(xpath = "//input[@value='Confirm']")
     public WebElement confirmbtn;
     public void confirmbtn()
     {

@@ -31,4 +31,11 @@ return actualtext;
 
 
     }
+
+    @FindBy(linkText = "Log out")
+    public WebElement logoutlink;
+    public void clicklogoutLink()
+    {
+        logoutlink.click();
+    }
 }

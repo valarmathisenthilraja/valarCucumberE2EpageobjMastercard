@@ -1,5 +1,7 @@
 Feature: End to End
-  Scenario: Create on order with MastercardPayment
+
+  @e2e
+   Scenario: Create on order with MastercardPayment
    Given I navigate into url "http://twentyconsulting-001-site1.dtempurl.com/"
     When click on login link
     Then i should see homepage
@@ -13,6 +15,7 @@ Feature: End to End
     And go to cart page
     And go to checkout page
     And order success page msg "Your order has been successfully processed!"
+   And click log out link
 
 
 

@@ -1,5 +1,4 @@
 package Mastercardpayment;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,6 +16,10 @@ public class Cartpage
    /* @FindBy(xpath ="(//a[@class='ico-cart'])/span")
     public WebElement cartlink;*/
     //Doubt here
+
+   // @FindBy(css="span.cart-label")
+    //public WebElement cartlink;
+
    @FindBy(linkText="Shopping cart")
    public WebElement shoppingcart;
 
@@ -25,9 +28,8 @@ public class Cartpage
 
     @FindBy(id="checkout")
     public WebElement checkout;
-    public void clickcart()throws InterruptedException
+    public void clickcart()
     {
-        Thread.sleep(2000);
         shoppingcart.click();
     }
     public void clicktermofservice()

@@ -3,29 +3,30 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-14T15:42:44.831Z",
+        "start_timestamp": "2020-06-20T10:24:21.679Z",
         "before": [
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\r\n\tat MastercartPayStepdef.begin(MastercartPayStepdef.java:32)\r\n",
-              "status": "failed"
-            },
-            "match": {
-              "location": "MastercartPayStepdef.begin()"
-            }
-          }
-        ],
-        "line": 2,
-        "name": "Create on order with MastercardPayment",
-        "description": "",
-        "id": "end-to-end;create-on-order-with-mastercardpayment",
-        "after": [
-          {
-            "result": {
+              "duration": 21000000,
               "status": "passed"
             },
             "match": {
-              "location": "MastercartPayStepdef.end()"
+              "location": "CommonBase.begin()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Update myaccount details",
+        "description": "",
+        "id": "registration;update-myaccount-details",
+        "after": [
+          {
+            "result": {
+              "duration": 875000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonBase.end()"
             }
           }
         ],
@@ -34,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 2679000000,
+              "status": "passed"
             },
-            "line": 3,
+            "line": 22,
             "name": "I navigate into url \"http://twentyconsulting-001-site1.dtempurl.com/\"",
             "match": {
               "arguments": [
@@ -52,9 +53,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 698000000,
+              "status": "passed"
             },
-            "line": 4,
+            "line": 23,
             "name": "click on login link",
             "match": {
               "location": "MastercartPayStepdef.click_on_login_link()"
@@ -63,25 +65,15 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 326000000,
+              "status": "passed"
             },
-            "line": 5,
-            "name": "i should see homepage",
-            "match": {
-              "location": "MastercartPayStepdef.i_should_see_homepage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "enter username \"abc@tester.com\"",
+            "line": 24,
+            "name": "enter username \"moon@tester.com\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"abc@tester.com\"",
+                  "val": "\"moon@tester.com\"",
                   "offset": 15
                 }
               ],
@@ -91,14 +83,15 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 303000000,
+              "status": "passed"
             },
-            "line": 7,
-            "name": "enter password \"abc123\"",
+            "line": 25,
+            "name": "enter password \"moon123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"abc123\"",
+                  "val": "\"moon123\"",
                   "offset": 15
                 }
               ],
@@ -108,9 +101,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1460000000,
+              "status": "passed"
             },
-            "line": 8,
+            "line": 26,
             "name": "see login page",
             "match": {
               "location": "MastercartPayStepdef.see_login_page()"
@@ -119,97 +113,71 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2704000000,
+              "status": "passed"
             },
-            "line": 9,
-            "name": "click on mobile link",
+            "line": 27,
+            "name": "i click my account link",
             "match": {
-              "location": "MastercartPayStepdef.click_on_mobile_link()"
+              "location": "RegisterpageStepdef.iClickMyAccountLink()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 58000000,
+              "status": "passed"
             },
-            "line": 10,
-            "name": "add item1 into cart",
+            "line": 28,
+            "name": "see my account page",
             "match": {
-              "location": "MastercartPayStepdef.add_item1_into_cart()"
+              "location": "RegisterpageStepdef.seeMyAccountPage()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 4387000000,
+              "status": "passed"
             },
-            "line": 11,
-            "name": "add item2 into cart",
-            "match": {
-              "location": "MastercartPayStepdef.add_item2_into_cart()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 12,
-            "name": "see the products",
-            "match": {
-              "location": "MastercartPayStepdef.see_the_products()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 13,
-            "name": "go to cart page",
-            "match": {
-              "location": "MastercartPayStepdef.go_to_cart_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "go to checkout page",
-            "match": {
-              "location": "MastercartPayStepdef.go_to_checkout_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "order success page msg \"Your order has been successfully processed!\"",
+            "line": 29,
+            "name": "change lastname \"senthilraja\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Your order has been successfully processed!\"",
-                  "offset": 23
+                  "val": "\"senthilraja\"",
+                  "offset": 16
                 }
               ],
-              "location": "MastercartPayStepdef.order_success_page_msg(java.lang.String)"
+              "location": "RegisterpageStepdef.changeLastname(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2988000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "click save button",
+            "match": {
+              "location": "RegisterpageStepdef.clickSaveButton()"
             },
             "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@update"
           }
         ]
       }
     ],
-    "name": "End to End",
+    "name": "Registration",
     "description": "",
-    "id": "end-to-end",
+    "id": "registration",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/MastercardPay.feature",
+    "uri": "file:src/test/resources/Register.feature",
     "tags": []
   }
 ]
