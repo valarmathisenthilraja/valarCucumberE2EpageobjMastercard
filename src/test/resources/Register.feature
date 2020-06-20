@@ -11,7 +11,7 @@ Feature: Registration
     When i should select day "7"
     When i should select month "5"
     When i should select year "2019"
-    When i should enter email 'moon@tester.com'
+    When i should enter email 'moon@testing.com'
     And i enter password 'moon123'
     And i enter confirmpwd 'moon123'
     And i clik reister button
@@ -26,7 +26,7 @@ Feature: Registration
       Then see login page
       When i click my account link
       Then see my account page
-      When change lastname "senthilraja"
+      When change lastname "raja"
       And click save button
 
 

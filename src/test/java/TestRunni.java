@@ -14,9 +14,9 @@ import java.net.URL;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = {"src//test//resources"},
-        plugin = {"pretty","json:mastercardpayment.json"},
+        plugin = {"pretty","json:mastercardpayment.json"}
        // tags={"@reg"}
-   tags = {"@update"}
+   //tags = {"@update"}
         )
 
 public class TestRunni
